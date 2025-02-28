@@ -3,13 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>DevBoard</title>
 
     <!-- CDN of Daisy UI and Tailwind  -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font CDN  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
 </head>
-<body>
+<body style=" font-family: 'Poppins'">
     <header class = "bg-white flex justify-between items-center mt-4 px-4 rounded-2xl h-[100px] md:max-w-[90vw] 2xl:max-w-[1536px] 2xl:mx-auto">
         <div class="h-14 w-64 flex justify-around">
             <div class = "h-[51px] w-[51px]">
@@ -31,6 +39,56 @@
             </div>
         </div>
     </header>
+
+    <!-- main section  -->
+    <main class = "bg-red-200 mt-4 px-4 rounded-2xl md:max-w-[90vw] 2xl:max-w-[1536px] 2xl:mx-auto">
+        <!-- left side  -->
+        <div class = "p-6 bg-white w-[75%]">
+            <!-- navigation row -->
+            <div class="flex justify-between">
+                <!-- task counter  -->
+                <div class="h-32 w-[263px] flex justify-around items-center bg-[#F4F7FF] rounded-xl">
+                    <!-- checkbox div  -->
+                    <div>
+                        <img src="assets/checkbox.png">
+                    </div>
+            
+                    <!-- task Counter writings  -->
+                    <div>
+                        <p class = "text-[#00303C] font-medium">Task Assigned</p>
+                        <h1 class = "font-bold text-[#00303C] text-[32px]">05</h1>
+                    </div>
+                </div>
+            
+                <!-- discover Card  -->
+                <div class = "rounded-xl bg-gradient-to-br from-[#3752FD] to-[#9BA8F8] w-[524px] h-32 flex justify-center items-center gap-5">
+                    <!-- calender Picture  -->
+                    <div>
+                        <img src="assets/board.png">
+                    </div>
+                    <!-- writings  -->
+                    <div>
+                        <p class = "font-medium text-2xl text-white">Discover Something</p>
+                        <p class = "font-medium text-2xl text-white">New Today!</p>
+                    </div>
+                </div>
+            
+                <!-- date card  -->
+                <div class="h-32 w-[263px] flex justify-around items-center bg-[#F4F7FF] rounded-xl">
+                    <!-- calender picture  -->
+                    <div>
+                        <img src="assets/calender.png">
+                    </div>
+            
+                    <!-- date  -->
+                    <div>
+                        <p class = "text-[22px] text-[#00303C]">Wed</p>
+                        <p class = "text-[#00303C] font-bold text-[22px]">July 28 2025</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 
 
     <!-- theme toggling functions -->
