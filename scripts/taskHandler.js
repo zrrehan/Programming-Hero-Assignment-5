@@ -56,6 +56,11 @@ for(let item = 1; item <= 6; item++) {
         } else {
             completed.innerText = newRemaining;
         }
+
+        totalTask -= 1;
+        if(totalTask == 0) {
+            alert("Congrats! You Have Completed all the Task Successfully")
+        }
     });
 }
 
